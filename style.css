@@ -12,11 +12,16 @@ body {
 }
 
 header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
     align-items: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -26,6 +31,8 @@ header .logo {
 
 header nav {
     margin: 0 20px;
+    text-align: right;
+    flex-grow: 1
 }
 
 nav a {
@@ -33,7 +40,7 @@ nav a {
     color: seashell;
 }
 
-.banner {
+#mission-banner {
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +50,7 @@ nav a {
     height: 700px;
 }
 
-.banner .mission {
+#mission-banner #mission {
     background-color: black;
     position: relative;
     top: 50%;
@@ -52,7 +59,7 @@ nav a {
     margin: 0 auto;
 }
 
-.tea {
+#tea {
     text-align: center;
     margin-top: 30px;
     margin-left: auto;
@@ -99,4 +106,50 @@ nav a {
 .tea-cup img {
     width: 300px;
     height: 200px;
+}
+
+#location-wrapper {
+    height: 500px;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 30px;
+}
+
+#location-wrapper h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px auto;
+}
+
+.location {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    line-height: 3;
+}
+
+.contact {
+    height: 200px;
+    text-align: center;
+}
+
+.contact .contact-info {
+    line-height: 3;
+}
+
+footer {
+    padding-left: 20px;
+    margin-bottom: 20px;
 }

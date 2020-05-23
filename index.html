@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="flex-container">
         <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png" alt="logo" class="logo">
         <nav>
-            <a href="#">Mission</a>
-            <a href="#">Featured Tea</a>
-            <a href="#">Location</a>
+            <a href="#mission-banner">Mission</a>
+            <a href="#tea">Featured Tea</a>
+            <a href="#location-wrapper">Location</a>
         </nav>
     </header>
 
-    <div class="banner">
-        <div class="mission">
+
+    <div id="mission-banner">
+        <div id="mission">
             <h2>Our Mission</h2>
             <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
         </div>
     </div>
-    <div class="tea">
+
+
+    <div id="tea">
         <h2>Tea of the month</h2>
         <h4>What's Steeping at The Tea Cozy?</h4>
     </div>
@@ -48,5 +51,40 @@
             <h2>Bedford Bizarre Tea</h2>
         </div>
     </div>
+
+
+    <div id="location-wrapper">
+        <h2>Locations</h2>
+        <div class="location-container">
+            <div class="location">
+                <h4>Downtown</h4>
+                <p>384 west 4th st</p>
+                <p>suite 108</p>
+                <p>Portland, Maine</p>
+            </div>
+            <div class="location">
+                <h4>East Bayside</h4>
+                <p>3443 Willow's Avenue</p>
+                <p>(Northwest Corner)</p>
+                <p>Portland, Maine</p>
+            </div>
+            <div class="location">
+                <h4>Oakdale</h4>
+                <p>515 Crescent Avenue</p>
+                <p>Second Floor</p>
+                <p>Portland, Maine</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>The Tea Cozy</h2>
+        <div class="contact-info">
+            <h5>contact@theteacozy.com</h5>
+            <p>917-555-8903</p>
+        </div>
+    </div>
+    <footer>
+        <p><small>&copy 2020 designed by Ivever Timothy T</small></p>
+    </footer>
 </body>
 </html>
